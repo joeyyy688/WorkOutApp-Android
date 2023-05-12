@@ -15,6 +15,13 @@ class ExerciseActivity : AppCompatActivity() {
         binding = ActivityExerciseBinding.inflate(layoutInflater)
         setContentView(binding?.root)
 
+        setSupportActionBar(binding?.exerciseAppBar)
 
+        if (supportActionBar != null){
+            supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        }
+        binding?.exerciseAppBar?.setNavigationOnClickListener {
+            onBackPressedDispatcher.onBackPressed()
+        }
     }
 }

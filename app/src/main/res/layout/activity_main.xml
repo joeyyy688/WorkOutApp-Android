@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:padding="@dimen/main_screen_main_layout_main_padding"
+    android:background="@color/white"
     >
 
 
@@ -20,7 +21,7 @@
     <FrameLayout
         android:id="@+id/flStart"
         android:layout_width="171dp"
-        android:layout_height="153dp"
+        android:layout_height="160dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
